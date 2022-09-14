@@ -23,6 +23,7 @@ const CardStyled = styled.div`
   padding: 10px;
   &:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
 `;
 

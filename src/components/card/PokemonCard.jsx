@@ -1,14 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export default function PokemonCard({ id, name, image }) {
   return (
-    <CardStyled>
-      <TitleStyled>
-        {id}: {name}
-      </TitleStyled>
-      <ImageStyled src={image} alt={name}></ImageStyled>
-    </CardStyled>
+    <Link to={`/detalle/${id}`}>
+      <CardStyled>
+        <TitleStyled>
+          {id}: {name}
+        </TitleStyled>
+        <ImageStyled src={image} alt={name}></ImageStyled>
+      </CardStyled>
+    </Link>
   );
 }
 //contenedor

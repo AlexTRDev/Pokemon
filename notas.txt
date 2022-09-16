@@ -1,0 +1,17 @@
+*React
+=> Componentes => Todo lo que renderizamos
+=> Estados locales(useState <=> this.state) => Todos los estados que se pueden cambiar del componente
+   => const [state, setState] = useState() => 
+      state=> Estado local
+      setState => La funcion que actualiza el estado local.
+=> Ciclo de vida(useEfect <=> componentDidMount, componentWillMount) => Todos los ciclos de vida del componente
+
+*Redux
+=>Estados Globales => Todos los estados globales que pueden acceder mi app
+   => useSelector(store => store.parteDelStadoGlobal) => Cada parte del estado que nosotros queremos recuperar desde algun componente.
+   => useDispatch() => La funcion que actualiza el estado global.
+
+=> Actions => Son todas las acciones que nosotros podemos hacer para modificar el estado global. LLeva el tipo de accion y lleva la informacion que se almacenara en el estado global.
+
+=> Reducer => Es el controlador del estado; en esta fichero se ejecutan las acciones, para modificar el estado global de la app.
+

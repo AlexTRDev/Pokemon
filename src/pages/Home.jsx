@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Pokemons from "../components/contenedores/Pokemons";
 
-export default function Home() {
+export default function Home({ users }) {
   return (
     <div>
       {/* filtros */}
